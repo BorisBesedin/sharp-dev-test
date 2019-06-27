@@ -1,0 +1,15 @@
+.page-main {
+	margin-top: -45px;
+}
+
+.page-main__title {
+	margin: 0;
+	position: relative;
+	@include font-set(28px, 46px, normal);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #ffffff;
+	text-align: center;
+}
+
+
+
