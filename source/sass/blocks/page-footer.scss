@@ -1,0 +1,13 @@
+.page-footer {
+	padding-bottom: 55px;
+	background-color: #181818;
+}
+
+.page-footer__copyrights {
+	margin-top: 50px;
+	display: block;
+	@include font-set(32px, 32px, normal);
+	color: #bbbbbb;
+	opacity: 0.6;
+	text-align: center;
+}

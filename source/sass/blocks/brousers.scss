@@ -1,0 +1,40 @@
+.brousers__list {
+	width: 195px;
+	@include list-clear();
+	margin: 0 auto;
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.brousers__item {
+	width: 25px;
+	height: 25px;
+	background-image: url("../img/browser icons.png");
+	background-repeat: no-repeat;
+}
+
+.brousers__item--chrome {
+	background-position: 25% center;
+}
+
+.brousers__item--ie {
+	background-position: 50% center;
+}
+
+.brousers__item--safari {
+	background-position: 75% center;
+}
+
+.brousers__item--opera {
+	background-position: 100% center;
+}
+
+.brousers__text {
+	margin-top: 20px;
+	padding: 0 15px;
+	@include font-set(14px, 18px, normal);
+	text-align: center;
+	color: #bbbbbb;
+	opacity: 0.6;
+}

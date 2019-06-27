@@ -1,0 +1,45 @@
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	@include list-clear();
+	padding: 35px 15px 20px 15px;
+	background-color: #151515;
+}
+
+.contacts__link {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.2;
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.contacts__link--evernote {
+	background-image: url("../img/evernote-logo.svg");
+}
+
+.contacts__link--facebook {
+	background-image: url("../img/facebook-logo.svg");
+}
+
+.contacts__link--pinterest {
+	background-image: url("../img/pinterest-logo.svg");
+}
+
+.contacts__link--twitter {
+	background-image: url("../img/twitter-logo-silhouette.svg");
+}
+
+.contacts__link--youtube {
+	background-image: url("../img/youtube.svg");
+}
+
+.contacts__link--github {
+	background-image: url("../img/github-logo.svg");
+}
+
