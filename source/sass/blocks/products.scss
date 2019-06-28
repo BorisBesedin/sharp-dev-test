@@ -23,8 +23,9 @@
 .products__list {
 	display: flex;
 	flex-wrap: wrap;
-	min-width: 290px;
+	width: 290px;
 	@include list-clear();
+	margin: 0 auto;
 	margin-top: 20px;
 }
 
@@ -75,5 +76,29 @@
 	&:active {
 		transform: scale(0.95);
 		color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+@media (min-width: 660px) {
+	.products__list {
+		width: 590px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media (min-width: 960px) {
+	.products__list {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.products__title {
+		padding-left: 15px;
+
+		&::before {
+			left: -10px;
+		}
 	}
 }

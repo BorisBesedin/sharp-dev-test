@@ -2,7 +2,16 @@
 	position: relative;
 	min-height: 110px;
 	background-color: #000000;
-	background-image: url("../img/header-bg.jpg");
+	background-image: url("../img/header-bg-desktop.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-position: center 25%;
+}
+
+@media (min-width: 960px) {
+	.page-header {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		min-height: 155px;
+	}
 }

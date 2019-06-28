@@ -46,3 +46,9 @@
 .monitor__connect-btn--not-active {
 	opacity: 0.1;
 }
+
+@media (min-width: 660px) {
+	.monitor__monitor-container {
+		height: 295px;
+	}
+}

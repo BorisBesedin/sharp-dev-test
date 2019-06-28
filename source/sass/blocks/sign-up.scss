@@ -1,0 +1,66 @@
+.sign-up {
+	background-color: #dadada;
+	box-shadow: 0 0 5px 0 #999999;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+.sign-up__title {
+	margin: 0;
+	padding: 15px;
+	margin-bottom: 15px;
+
+	color: $main-text-color;
+	border-bottom: 1px solid #c3c3c3;
+	@include font-set(28px, 28px, normal);
+}
+
+.sign-up__form {
+	display: flex;
+	flex-direction: column;
+}
+
+.sign-up__field {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.sign-up__field input {
+	width: 100%;
+	padding: 16px;
+	box-sizing: border-box;
+
+	background-color: #eeeeee;
+	border: 1px solid #c0c0c0;
+	box-shadow: 0 0 0 2px #d8d8d8 inset;
+
+	@include font-set(16px, 16px, normal);
+	font-family: 'Arial', sans-serif;
+	color: #a3a3a3;
+}
+
+.sign-up__terms {
+	@include font-set(11px, 11px, normal);
+	font-family: 'Arial', sans-serif;
+	color: #000000;
+	text-align: center;
+}
+
+.sign-up__link {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.sign-up__submit-btn {
+	width: 140px;
+	align-self: flex-end;
+	padding: 11px 0;
+	@include font-set(14px, 18px, bold);
+	font-family: 'Arial', sans-serif;
+	background-color: #eeeeee;
+	border: 1px solid #c6c6c6;
+	box-shadow: 0 2px 2px 0 #bebebe;
+	border-radius: 5px;
+	color: #949494;
+}

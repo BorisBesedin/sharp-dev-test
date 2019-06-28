@@ -1,6 +1,7 @@
 body {
 	min-width: 320px;
 	font-family: 'Oswald', 'Arial', sans-serif;
+  background-color: #1f1f1f;
 }
 
 a {
@@ -19,6 +20,19 @@ a {
 }
 
 .wrapper {
-	width: 290px;
+	width: 91%;
 	margin: 0 auto;
+}
+
+@media (min-width: 660px) {
+  .wrapper {
+    width: 92%;
+  }
+}
+
+@media (min-width: 960px) {
+  .wrapper {
+    width: 96%;
+    max-width: 1170px;
+  }
 }

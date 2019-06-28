@@ -2,112 +2,144 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>ParrotWings</title>
 	<link rel="stylesheet" href="css/style.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header class="page-header">
-		<div class="wrapper">
 			<nav class="main-nav main-nav--closed">
-				<button class="main-nav__toggle" type="button"><span class="visually-hidden">Menu</span></button>
-				<ul class="main-nav__list">
-					<li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">Credits</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">Exchange</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">Partners</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">Stock</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">Holding</a></li>
-					<li class="main-nav__item"><a href="#" class="main-nav__link">About</a></li>
-				</ul>
+				<div class="wrapper">
+					<button class="main-nav__toggle" type="button"><span class="visually-hidden">Menu</span></button>
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Credits</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Exchange</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Partners</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Stock</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">Holding</a></li>
+						<li class="main-nav__item"><a href="#" class="main-nav__link">About</a></li>
+					</ul>
+				</div>
 			</nav>
-		</div>
 	</header>
 	<main class="page-main">
-		<h1 class="page-main__title">ParrotWings Exchange</h1>
-		<section class="products">
-			<div class="wrapper">
-				<h2 class="products__title">Products</h2>
-				<ul class="products__list">
-					<li class="products__item">
-						<a href="#" class="products__link">
-							<img class="products__image" src="img/product-1.png" alt="product-1">
-						</a>
-						<span class="products__access">2 props</span>
-						<h3 class="products__item-name">Unlimited exchange</h3>
-						<a href="#" class="products__order-btn">Order</a>
-					</li>
-					<li class="products__item">
-						<a href="#" class="products__link">
-							<img class="products__image" src="img/product-2.png" alt="product-1">
-						</a>
-						<span class="products__access">1 props</span>
-						<h3 class="products__item-name">International excha...</h3>
-						<a href="#" class="products__order-btn">Order</a>
-					</li>
-					<li class="products__item">
-						<a href="#" class="products__link">
-							<img class="products__image" src="img/product-3.png" alt="product-1">
-						</a>
-						<span class="products__access">3 props, all</span>
-						<h3 class="products__item-name">Additional services</h3>
-						<a href="#" class="products__order-btn">Order</a>
-					</li>
-					<li class="products__item">
-						<a href="#" class="products__link">
-							<img class="products__image" src="img/product-4.png" alt="product-1">
-						</a>
-						<span class="products__access">5 props</span>
-						<h3 class="products__item-name">Support</h3>
-						<a href="#" class="products__order-btn">Order</a>
-					</li>
-					<li class="products__item">
-						<a href="#" class="products__link">
-							<img class="products__image" src="img/product-5.png" alt="product-1">
-						</a>
-						<span class="products__access">2 props</span>
-						<h3 class="products__item-name">Holiday works</h3>
-						<a href="#" class="products__order-btn">Order</a>
-					</li>
-					<li class="products__item">
-						<a href="#" class="products__link">
-							<img class="products__image" src="img/product-6.png" alt="product-1">
-						</a>
-						<span class="products__access">not in access</span>
-						<h3 class="products__item-name">Postal delivery</h3>
-						<a href="#" class="products__order-btn">Order</a>
-					</li>
-					<li class="products__item">
-						<a href="#" class="products__link">
-							<img class="products__image" src="img/product-7.png" alt="product-1">
-						</a>
-						<span class="products__access">2 props</span>
-						<h3 class="products__item-name">Document manag...</h3>
-						<a href="#" class="products__order-btn">Order</a>
-					</li>
-					<li class="products__item">
-						<a href="#" class="products__link">
-							<img class="products__image" src="img/product-8.png" alt="product-1">
-						</a>
-						<span class="products__access">1 prop</span>
-						<h3 class="products__item-name">Promotions</h3>
-						<a href="#" class="products__order-btn">Order</a>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="monitor">
-			<div class="wrapper">
-				<h2 class="monitor__title">Online Monitor</h2>
-				<div class="monitor__monitor-container">
-					<div class="monitor__spinner spinner">
-						<i class="icon-spin"></i>
-						<span class="spinner__text">Loading...</span>
-					</div>
+		<div class="page-main-wrapper">
+			<div class="page-main__column">
+				<div class="page-main__title-container">
+					<h1 class="page-main__title">ParrotWings Exchange</h1>
+					<p class="page-main__search">
+						<label for="#search" class="visually-hidden">Search</label>
+						<input type="search" name="search" class="page-main__search" placeholder="Search..." id="search">
+					</p>
 				</div>
-				<button class="monitor__connect-btn monitor__connect-btn--not-active">Connect</button>
+				<section class="products">
+					<div class="wrapper">
+						<h2 class="products__title">Products</h2>
+						<ul class="products__list">
+							<li class="products__item">
+								<a href="#" class="products__link">
+									<img class="products__image" src="img/product-1.png" alt="product-1">
+								</a>
+								<span class="products__access">2 props</span>
+								<h3 class="products__item-name">Unlimited exchange</h3>
+								<a href="#" class="products__order-btn">Order</a>
+							</li>
+							<li class="products__item">
+								<a href="#" class="products__link">
+									<img class="products__image" src="img/product-2.png" alt="product-1">
+								</a>
+								<span class="products__access">1 props</span>
+								<h3 class="products__item-name">International excha...</h3>
+								<a href="#" class="products__order-btn">Order</a>
+							</li>
+							<li class="products__item">
+								<a href="#" class="products__link">
+									<img class="products__image" src="img/product-3.png" alt="product-1">
+								</a>
+								<span class="products__access">3 props, all</span>
+								<h3 class="products__item-name">Additional services</h3>
+								<a href="#" class="products__order-btn">Order</a>
+							</li>
+							<li class="products__item">
+								<a href="#" class="products__link">
+									<img class="products__image" src="img/product-4.png" alt="product-1">
+								</a>
+								<span class="products__access">5 props</span>
+								<h3 class="products__item-name">Support</h3>
+								<a href="#" class="products__order-btn">Order</a>
+							</li>
+							<li class="products__item">
+								<a href="#" class="products__link">
+									<img class="products__image" src="img/product-5.png" alt="product-1">
+								</a>
+								<span class="products__access">2 props</span>
+								<h3 class="products__item-name">Holiday works</h3>
+								<a href="#" class="products__order-btn">Order</a>
+							</li>
+							<li class="products__item">
+								<a href="#" class="products__link">
+									<img class="products__image" src="img/product-6.png" alt="product-1">
+								</a>
+								<span class="products__access">not in access</span>
+								<h3 class="products__item-name">Postal delivery</h3>
+								<a href="#" class="products__order-btn">Order</a>
+							</li>
+							<li class="products__item">
+								<a href="#" class="products__link">
+									<img class="products__image" src="img/product-7.png" alt="product-1">
+								</a>
+								<span class="products__access">2 props</span>
+								<h3 class="products__item-name">Document manag...</h3>
+								<a href="#" class="products__order-btn">Order</a>
+							</li>
+							<li class="products__item">
+								<a href="#" class="products__link">
+									<img class="products__image" src="img/product-8.png" alt="product-1">
+								</a>
+								<span class="products__access">1 prop</span>
+								<h3 class="products__item-name">Promotions</h3>
+								<a href="#" class="products__order-btn">Order</a>
+							</li>
+						</ul>
+					</div>
+				</section>
 			</div>
-		</section>
+			<div class="page-main__column">
+				<section class="sign-up">
+					<form action="https://echo.htmlacademy.ru" method="get" target="_blank" class="sign-up__form">
+						<h2 class="sign-up__title">Sign Up</h2>
+						<p class="sign-up__field">
+							<label for="first-name" class="visually-hidden">first name</label>
+							<input type="text" id="first-name" name="first-name" placeholder="First Name">
+						</p>
+						<p class="sign-up__field">
+							<label for="Last-name" class="visually-hidden">Last name</label>
+							<input type="text" id="Last-name" name="Last-name" placeholder="Last Name">
+						</p>
+						<p class="sign-up__field">
+							<label for="Last-name" class="visually-hidden">Email</label>
+							<input type="email" id="email" name="email" placeholder="Email">
+						</p>
+						<p class="sign-up__terms">By creating a PW Exchange Account you acknowledge that you have read, understood and agree to the <a href="#" class="sign-up__link">Terms of Use</a> and <a href="#" class="sign-up__link">Privacy Policy</a>.</p>
+						<button class="sign-up__submit-btn" type="submit">Sign Up</button>
+					</form>
+				</section>
+				<section class="monitor">
+					<div class="wrapper">
+						<h2 class="monitor__title">Online Monitor</h2>
+						<div class="monitor__monitor-container">
+							<div class="monitor__spinner spinner">
+								<i class="icon-spin"></i>
+								<span class="spinner__text">Loading...</span>
+							</div>
+						</div>
+						<button class="monitor__connect-btn monitor__connect-btn--not-active">Connect</button>
+					</div>
+				</section>
+			</div>
+		</div>
 	</main>
 	<footer class="page-footer">
 		<ul class="contacts">
