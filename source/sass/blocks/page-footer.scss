@@ -3,6 +3,10 @@
 	background-color: #181818;
 }
 
+.page-footer .wrapper {
+	position: relative;
+}
+
 .page-footer__copyrights {
 	margin-top: 50px;
 	display: block;
@@ -10,4 +14,22 @@
 	color: #bbbbbb;
 	opacity: 0.6;
 	text-align: center;
+}
+
+@media (min-width: 960px) {
+	.page-footer__copyrights {
+		position: absolute;
+		margin: 0;
+		top: -60px;
+		right: 45px;
+	}
+
+	.page-footer__footer-bot {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.page-footer__menu {
+		width: 62%;
+	}
 }

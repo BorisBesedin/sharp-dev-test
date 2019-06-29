@@ -1,5 +1,7 @@
 .monitor {
-	padding-top: 25px;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
 	position: relative;
 	background-color: #e2e2e2;
 
@@ -13,11 +15,6 @@
 		background-color: #c7c7c7;
 		box-shadow: 0 -1px 2px 0 #c7c7c7;
 	}
-}
-
-.monitor .wrapper {
-	display: flex;
-	flex-direction: column;
 }
 
 .monitor__title {
@@ -50,5 +47,19 @@
 @media (min-width: 660px) {
 	.monitor__monitor-container {
 		height: 295px;
+	}
+}
+
+@media (min-width: 960px) {
+	.monitor {
+		margin-top: 25px;
+		margin-bottom: 30px;
+		border: 1px solid #c7c7c7;
+		border-radius: 5px;
+
+	}
+
+	.monitor__monitor-container {
+		height: 200px;
 	}
 }

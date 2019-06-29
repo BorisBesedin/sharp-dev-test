@@ -1,9 +1,14 @@
 .sign-up {
+	display: none;
 	background-color: #dadada;
 	box-shadow: 0 0 5px 0 #999999;
 	border-radius: 5px;
 	box-sizing: border-box;
 	padding: 20px;
+
+	@media (min-width: 960px) {
+		display: block;
+	}
 }
 
 .sign-up__title {

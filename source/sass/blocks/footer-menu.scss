@@ -1,5 +1,7 @@
 .footer-menu__list {
+	max-width: 210px;
 	@include list-clear();
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -21,12 +23,40 @@
 	@include font-set(16px, 16px, normal);
 	color: #bbbbbb;
 	opacity: 0.6;
-	text-align: center;
 }
 
 @media (min-width: 660px) {
 	.footer-menu {
 		display: flex;
 		justify-content: space-around;
+	}
+}
+
+@media (min-width: 960px) {
+	.footer-menu {
+		box-sizing: border-box;
+		padding-left: 45px;
+		justify-content: flex-start;
+	}
+
+	.footer-menu__list {
+		margin-left: 0;
+		align-items: flex-start;
+
+		&:not(:last-child) {
+			margin-right: 90px;
+		}
+	}
+
+	.footer-menu__item {
+		margin-bottom: 10px;
+		text-align: left;
+	}
+
+	.footer-menu__brousers {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		width: 24%;
 	}
 }

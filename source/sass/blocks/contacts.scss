@@ -1,9 +1,13 @@
+.contacts-container {
+	background-color: #151515;
+}
+
 .contacts {
+	max-width: 800px;
 	display: flex;
 	justify-content: space-between;
 	@include list-clear();
-	padding: 35px 15px 20px 15px;
-	background-color: #151515;
+	padding: 35px 0 20px 0;
 }
 
 .contacts__link {
@@ -41,5 +45,14 @@
 
 .contacts__link--github {
 	background-image: url("../img/github-logo.svg");
+}
+
+@media (min-width: 960px) {
+	.contacts {
+		width: 68%;
+		box-sizing: border-box;
+		padding-left: 45px;
+		padding-right: 45px;
+	}
 }
 
