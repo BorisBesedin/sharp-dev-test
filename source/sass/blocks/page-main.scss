@@ -1,5 +1,9 @@
 .page-main {
 	margin-top: -45px;
+	background-color: #e9e9e9;
+	max-width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .page-main__search input {
@@ -13,6 +17,11 @@
 	box-shadow: 0 0 0 2px #d8d8d8 inset;
 }
 
+.page-main-wrapper {
+	width: 290px;
+	margin: 0 auto;
+}
+
 .page-main__title-container {
 	background-color: rgba(0, 0, 0, 0.8);
 }
@@ -24,6 +33,13 @@
 	background-color: rgba(0, 0, 0, 0.8);
 	color: #ffffff;
 	text-align: center;
+}
+
+@media (min-width: 660px) {
+	.page-main-wrapper {
+		width: 620px;
+		margin: 0 auto;
+	}
 }
 
 @media (min-width: 960px) {
@@ -49,10 +65,9 @@
 	.page-main-wrapper {
 		width: 100%;
 		box-sizing: border-box;
-		max-width: 1170px;
+		max-width: 1120px;
 		margin: 0 auto;
 		display: flex;
-		padding: 30px;
 		background-color: #e9e9e9;
 	}
 
