@@ -22,7 +22,7 @@
 
 .monitor__title {
 	margin: 0;
-	@include font-set(28px, 28px, normal);
+	@include font-set(28px, 28px, 300);
 	opacity: 0.1;
 }
 
@@ -59,10 +59,18 @@
 		margin-bottom: 30px;
 		border: 1px solid #c7c7c7;
 		border-radius: 5px;
-
 	}
 
 	.monitor__monitor-container {
-		height: 200px;
+		height: 195px;
+	}
+
+	.monitor__title {
+		margin-left: 20px;
+	}
+
+	.monitor__connect-btn {
+		margin-right: 20px;
+		margin-bottom: 10px;
 	}
 }

@@ -4,7 +4,8 @@
 	box-shadow: 0 0 5px 0 #999999;
 	border-radius: 5px;
 	box-sizing: border-box;
-	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 
 	@media (min-width: 960px) {
 		display: block;
@@ -13,12 +14,15 @@
 
 .sign-up__title {
 	margin: 0;
-	padding: 15px;
-	margin-bottom: 15px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-bottom: 12px;
 
 	color: $main-text-color;
 	border-bottom: 1px solid #c3c3c3;
-	@include font-set(28px, 28px, normal);
+	@include font-set(28px, 28px, 300);
 }
 
 .sign-up__form {
@@ -28,7 +32,7 @@
 
 .sign-up__field {
 	margin: 0;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 }
 
 .sign-up__field input {
@@ -46,7 +50,8 @@
 }
 
 .sign-up__terms {
-	@include font-set(11px, 11px, normal);
+	margin: 0;
+	@include font-set(11px, 13px, normal);
 	font-family: 'Arial', sans-serif;
 	color: #000000;
 	text-align: center;
@@ -58,6 +63,8 @@
 }
 
 .sign-up__submit-btn {
+	margin-top: 10px;
+	margin-bottom: 20px;
 	width: 140px;
 	align-self: flex-end;
 	padding: 11px 0;

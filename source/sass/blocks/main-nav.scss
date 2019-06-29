@@ -14,7 +14,7 @@
 	display: block;
 	padding: 9px 0;
 
-	@include font-set(28px, auto, 300);
+	@include font-set(26px, auto, 200);
 	text-align: center;
 	background-color: #000000;
 
@@ -139,8 +139,11 @@
 
 	.main-nav .main-nav__list {
 		width: 100%;
+		box-sizing: border-box;
 		position: relative;
 		top: 0;
+		padding-left: 15px;
+		padding-right: 15px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
@@ -151,6 +154,7 @@
 	}
 
 	.main-nav__link {
+		padding: 5px 0;
 		background-color: transparent;
 	}
 }

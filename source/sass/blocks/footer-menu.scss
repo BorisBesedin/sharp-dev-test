@@ -10,7 +10,7 @@
 .footer-menu__title {
 	margin-top: 40px;
 	margin-bottom: 20px;
-	@include font-set(26px, 26px, normal);
+	@include font-set(26px, 26px, 200);
 	color: #444444;
 }
 
@@ -24,9 +24,9 @@
 }
 
 .footer-menu__link {
-	@include font-set(16px, 16px, normal);
+	@include font-set(16px, 16px, 300);
 	color: #bbbbbb;
-	opacity: 0.6;
+	opacity: 0.8;
 }
 
 @media (min-width: 660px) {
@@ -63,5 +63,18 @@
 		flex-direction: column;
 		justify-content: flex-end;
 		width: 24%;
+	}
+
+	.footer-menu__title {
+		margin-top: 25px;
+	}
+
+	.footer-menu__list:nth-child(3) {
+		margin-top: 0;
+		margin-right: 10px;
+	}
+
+	.footer-menu__list:nth-child(2) {
+		margin-left: 30px;
 	}
 }
