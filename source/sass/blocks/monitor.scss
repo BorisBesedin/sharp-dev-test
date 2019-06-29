@@ -1,9 +1,12 @@
 .monitor {
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding-top: 25px;
+	padding-left: 10px;
+	padding-bottom: 10px;
 	position: relative;
 	background-color: #e2e2e2;
+	margin-top: 5px;
 
 	&::before {
 		content: "";
@@ -20,13 +23,13 @@
 .monitor__title {
 	margin: 0;
 	@include font-set(28px, 28px, normal);
-	opacity: 0.3;
+	opacity: 0.1;
 }
 
 .monitor__monitor-container {
 	margin-top: 20px;
-	height: 195px;
-	border-top: 1px solid #c6c6c6;
+	height: 190px;
+	border-top: 1px solid #dedede;
 }
 
 .monitor__connect-btn {

@@ -8,11 +8,11 @@
 }
 
 .page-footer__copyrights {
-	margin-top: 50px;
+	margin-top: 45px;
 	display: block;
-	@include font-set(32px, 32px, normal);
+	@include font-set(32px, 32px, 300);
 	color: #bbbbbb;
-	opacity: 0.6;
+	opacity: 0.3;
 	text-align: center;
 }
 

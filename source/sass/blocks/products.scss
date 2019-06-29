@@ -1,6 +1,5 @@
 .products {
 	background-color: #e9e9e9;
-	padding-top: 25px;
 }
 
 .products__title {
@@ -14,7 +13,7 @@
 		position: absolute;
 		width: 20px;
 		height: 8px;
-		top: 15px;
+		top: 18px;
 		left: 0;
 		background-color: #933435;
 	}
@@ -26,7 +25,7 @@
 	width: 290px;
 	@include list-clear();
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .products__link {
@@ -36,21 +35,22 @@
 
 .products__item {
 	width: 145px;
-	margin-bottom: 47px;
+	margin-bottom: 40px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
 .products__access {
-	margin-top: 8px;
+	margin-top: 6px;
 	@include font-set(11px, 11px, normal);
 	color: #525252;
 	text-align: center;
+	font-family: 'Arial', sans-serif;
 }
 
 .products__item-name {
-	margin-top: 8px;
+	margin-top: 7px;
 	margin-bottom: 0;
 	@include font-set(18px, 18px, normal);
 	color: $main-text-color;
@@ -67,6 +67,7 @@
 	border-radius: 5px;
 	@include font-set(12px, 21px, normal);
 	text-align: center;
+	font-family: 'Arial', sans-serif;
 
 	&:hover {
 		transform: scale(1.05);

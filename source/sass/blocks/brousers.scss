@@ -31,12 +31,13 @@
 }
 
 .brousers__text {
-	margin-top: 20px;
+	margin-top: 25px;
 	padding: 0 15px;
-	@include font-set(14px, 18px, normal);
+	@include font-set(14px, 18px, 300);
 	text-align: center;
 	color: #bbbbbb;
-	opacity: 0.6;
+	opacity: 0.4;
+	font-family: 'Arial', sans-serif;
 }
 
 @media (min-width: 960px) {

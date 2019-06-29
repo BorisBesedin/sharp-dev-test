@@ -1,5 +1,5 @@
 .footer-menu__list {
-	max-width: 210px;
+	max-width: 290px;
 	@include list-clear();
 	margin: 0 auto;
 	display: flex;
@@ -9,13 +9,17 @@
 
 .footer-menu__title {
 	margin-top: 40px;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	@include font-set(26px, 26px, normal);
 	color: #444444;
 }
 
+.footer-menu__list:nth-child(3) {
+	margin-top: 20px;
+}
+
 .footer-menu__item {
-	margin-bottom: 15px;
+	margin-bottom: 7px;
 	text-align: center;
 }
 
@@ -40,6 +44,7 @@
 	}
 
 	.footer-menu__list {
+		max-width: 210px;
 		margin-left: 0;
 		align-items: flex-start;
 
