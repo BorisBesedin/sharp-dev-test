@@ -1,6 +1,6 @@
 .main-nav__list {
 	@include list-clear;
-	position: absolute;
+	position: fixed;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -49,23 +49,24 @@
 }
 
 .main-nav__toggle {
-	position: absolute;
-	top: 22px;
-	left: 13px;
-	width: 30px;
+	position: fixed;
+	top: 24px;
+	left: 18px;
+	width: 35px;
 	height: 30px;
 
-	background-color: transparent;
+	background-color: rgba(0, 0, 0, 0.3);
 	outline: none;
 	border: none;
-	z-index: 1;
+	z-index: 2;
 	cursor: pointer;
+	border-radius: 5px;
 }
 
 .main-nav--closed .main-nav__toggle::before {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 5px;
+	right: 4px;
 	content: "";
 	height: 2px;
 	width: 28px;
@@ -107,8 +108,8 @@
 		content: "";
 		position: absolute;
 		width: 30px;
-		height: 2px;
-		top: 10px;
+		height: 3px;
+		top: 12px;
 		left: 0;
 		background-color: #ffffff;
 		transition: 0.4s;

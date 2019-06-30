@@ -24,10 +24,12 @@ searchBtn.addEventListener("click", function() {
 //фиксация меню при прокрутке
 window.onscroll = function() {
   var headerTop = header.getBoundingClientRect();
-  if (headerTop.top < -110) {
+  if (headerTop.top < -105) {
     mainNav.classList.add("main-nav--fixed");
   } else {
     mainNav.classList.remove("main-nav--fixed");
   }
 };
+
+var tooglePos = navToggle.getBoundingClientRect();
     

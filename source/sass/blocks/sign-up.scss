@@ -75,4 +75,15 @@
 	box-shadow: 0 2px 2px 0 #bebebe;
 	border-radius: 5px;
 	color: #949494;
+	outline: none;
+
+	&:hover {
+		background-color: #ffffff;
+	}
+
+	&:active {
+		transition: 0.2s;
+		box-shadow: none;
+		transform: translateY(3px);
+	}
 }
