@@ -20,13 +20,13 @@ gulp.task("css", function () {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
 gulp.task("server", function () {
   server.init({
-    server: "source",
+    server: "build",
     notify: false,
     open: true,
     cors: true,
@@ -44,6 +44,7 @@ gulp.task("clean", function() {
 gulp.task("copy", function() {
   return gulp.src([
     "source/img/**",
+    "source/font/**",
     "source/js/**",
     "source/*.html",
     "source/css/normalize.css"
@@ -59,4 +60,4 @@ gulp.task("build", gulp.series(
   "css"
 ));
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("build", "server"));

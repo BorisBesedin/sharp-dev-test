@@ -10,8 +10,11 @@
 @media (min-width: 960px) {
 	.page-header {
 		display: flex;
+		box-sizing: border-box;//для IE, ибо не работает flex-end ><
 		flex-direction: column;
 		justify-content: flex-end;
 		min-height: 155px;
-	}
+		background-position: 50% 23%;
+		padding-top: 110px;//для IE, ибо не работает flex-end ><
+	}	
 }
