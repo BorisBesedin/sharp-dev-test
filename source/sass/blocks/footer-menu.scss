@@ -38,6 +38,10 @@
 		display: flex;
 		justify-content: space-around;
 	}
+
+	.footer-menu__container:nth-child(3) {
+		margin-top: 0;
+	}
 }
 
 @media (min-width: 960px) {
